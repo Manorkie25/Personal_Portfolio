@@ -1,40 +1,27 @@
-* {
-    margin-top: 0;
+  * {
+    margin: 0;
     padding: 0;
-}
+} *     
 
-body {
-    background-image: url(../Images/Hp2.jpg);
-    width: 90%;
-    height: 100vh;
-    background-size: cover;
-}
-
-nav {
-    background-color: rgb(9, 9, 10);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 70px;
-    position: fixed;
-    right: 0;
-    left: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-.nav-items {
-    width: 50%;
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #19234B;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family:Geneva;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px; ;
+    margin-right: 40px;
 }
 
 .textwhite {
-    color: rgb(80, 80, 197);
+    color:white;
 }
 
 .textbold {
@@ -46,54 +33,62 @@ a:hover {
 }
 
 .container {
-    font-size: larger;
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 100px;
-    width: 30%;
-    line-height: 2.0;
-}
-
-.button-border {
-    border-radius: 0.20%;
-    text-align: center;
-    background-color: #19234B;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.button-position {
-    text-align: right;
-    background-color:transparent;
-    padding: 12px 24px;
-    border:none;
-    border-radius: 50px;
-    font-size: 80px;
-    cursor: pointer;
-    box-shadow: 0 0 0 rgba(15, 98, 254, 0);
-    /* start with no shadow */
-    transition: box-shadow 0.4s ease;
-    width: 40%;
-    margin: 0 auto;
+    background-image:url(../Images/Presentation2.jpg) ;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 20px;
+    font-size: larger;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.imageW {
+    border-radius: 50%;
+    width: auto;
+    height: 75%;
 }
 
-.button-position button {
-    background: transparent;
-    color:white;
-    border-radius:20%;
-    border-width: 200%;
-    box-shadow: 0 0 0 rgba(15, 98, 254, 0);
-    /* start with no shadow */
-    transition: box-shadow 0.4s ease;
+.text {
+   padding-top: 20%;
+   /* justify-content: center; */
+
 }
 
-.image {
-    background-image: url(../Images/Group-of-smiling-doctors.jpg);
-    width: 90px;
-    background-size: contain;
+.text p {
+    font-size: larger;
+    font-weight: bold;
+    text-wrap:normal;
+    font-family: Geneva;
+}
+
+hr.decorative-line {
+    border-top: 50% solid #19234B; /* Change color and thickness as needed */
+    margin: 30px 0;                /* Space above and below the line */
+    width: 60%;                    /* Adjust width as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons .button1,
+.buttons .button2 {
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 20px;
+    width: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: #19234B;
+    color: white;
+    margin: 10px 0;
+   
+}
+.buttons .button1,
+.buttons .button2 :hover {
+    background-color: #19234B;
+    color: white;
+    transform: scale(1.05);
+    transition: all;
+    box-shadow: white 0px 0px 10px;
 
 }
