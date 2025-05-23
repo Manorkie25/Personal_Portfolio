@@ -32,15 +32,20 @@ a:hover {
     color: brown;
 }
 
+body {
+     background-image:url(../Images/Presentation2.jpg) ;
+}
+
+
 .container {
-    background-image:url(../Images/Presentation2.jpg) ;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     font-size: larger;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left:30px ;
     
 }
 .imageW {
@@ -50,16 +55,25 @@ a:hover {
 }
 
 .text {
-   padding-top: 20%;
+   padding-top: 10%;
    /* justify-content: center; */
 
 }
 
+.text h1 {
+    font-size: larger;
+    font-weight: bold;
+    text-wrap:normal;
+    font-family: Geneva;
+    color:black
+}
 .text p {
     font-size: larger;
     font-weight: bold;
     text-wrap:normal;
     font-family: Geneva;
+    color: black;
+    font-weight: bold; 
 }
 
 hr.decorative-line {
@@ -83,8 +97,15 @@ hr.decorative-line {
     margin: 10px 0;
    
 }
-.buttons .button1,
-.buttons .button2 :hover {
+.buttons .button1:hover {
+    background-color: #19234B;
+    color: white;
+    transform: scale(1.05);
+    transition: all;
+    box-shadow: white 0px 0px 10px;
+
+}
+.buttons .button2:hover {
     background-color: #19234B;
     color: white;
     transform: scale(1.05);
