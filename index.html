@@ -2,64 +2,259 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>PersonalPortfolio</title>
-    <link rel="stylesheet" href="./Styles/index.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>PersonalPortfolio</title>
+  <link rel="stylesheet" href="./Styles/index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./scripts/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
-<body>   
-    <nav class="navbar">
-        <div class="logo">
-            <h4 class="textwhite textbold">Aide</h4>
-        </div>
-        <div class="nav-items">
-            <a href="#" class="textwhite textbold"><span>
-                    <h4>Home</h4>
-                </span></a>
-            <a href="#" class="textwhite textbold"><span>
-                    <H4>About Me</H4>
-                </span></a>
-            <a href="#" class="textwhite textbold"><span>
-                    <h4>Services</H4>
-                </span></a>
-            <a href="#" class="textwhite textbold"><span>
-                    <h4>Skills</h4>
-                </span></a>
-            <a href="#" class=" textwhite textbold"><span>
-                    <h4>Contact</h4>
-                </span></a>
-        </div>
-        </Nav>
-
-    <Section class="hero">
-    <div class="container">
-        <div class="text">
-        <h1>Hi there !</h1>
-        <h1>I am a Web Developer & Content Writer </h1>
-        <p>You're welcome to my portfolio page. <br> Have a look around and you'll find that I am just what you need.</p>  <br>
-        <hr>
-        <div class="buttons">
-        <button class="button1">See my work</button> 
-        <button class="button2">Initiate a Project</button>
-        </div>
-        </div>
-
-        <div class="Image">
-                <img class="imageW" src="./Images/Hero.jpeg"  alt="My Image">
-        </div>
+<body>
+  <!-- Navbar -->
+  <nav
+    class="navbar fixed flex flex-row justify-between left-0 w-full z-50 bg-[#386D88] text-white px-4 md:px-8 py-2 text-lg font-sans">
+    <div class="flex items-center justify-between w-full">
+      <div class="logo font-bold text-2xl flex items-center">
+        <img src="./Images/logo.jpg" alt="logo image" class="w-10 h-10 inline-block mr-2">
+      </div>
+      <button id="nav-toggle" class="md:hidden focus:outline-none">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
     </div>
-    </Section>
+    <!-- Nav menu OUTSIDE the flex row -->
+    <div id="nav-menu"
+      class="font-family nav-items flex-col md:flex md:flex-row gap-6 md:gap-8 mt-4 md:mt-0 hidden md:flex bg-[#386D88] rounded-lg shadow-lg md:shadow-none transition-all duration-300 absolute md:static top-16 left-4 right-4 z-40">
+      <a href="#home" class="hover:text-yellow-300 font-bold">Home</a>
+      <a href="#about" class="hover:text-yellow-300 font-bold">About</a>
+      <a href="#portfolio" class="hover:text-yellow-300 font-bold">Portfolio</a>
+      <a href="#skills" class="hover:text-yellow-300 font-bold">Skills</a>
+      <a href="#contact" class="hover:text-yellow-300 font-bold">Contact</a>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section id="home"
+    class="hero-bg-animate bg-cover bg-no-repeat bg-center bg-fixed min-h-screen flex items-center justify-center relative"
+    style="background-image: url('./Images/Actual.jpg');">
+    <div class="hero-text-animate flex flex-col justify-center items-center text-center py-12 max-w-xl rounded-l-lg">
+      <h1 class="font-heading typewriter text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg">Hi there!
+      </h1>
+      <h2 class="text-2xl md:text-4xl font-semibold text-yellow-300 mb-4">I am a Web Developer &amp; Content Writer
+      </h2>
+      <h1 id="font-bold" class="font-family md:text-xl text-white font-medium  mb-8 leading-relaxed">
+        You're welcome to my portfolio page.<br>
+        Have a look around and you'll find that I am just what you need.
+      </h1>
+      <div class="buttons flex flex-col gap-4 w-auto">
+        <a href="./Files/Myresume.pdf" target="_blank" rel="noopener"><button
+            class="rounded-full px-4 py-3 text-lg bg-[#19234B] text-white font-bold hover:bg-yellow-300 hover:text-[#19234B] transition">
+            See my resume
+          </button></a>
+        <a href="mailto:your@email.com"
+          class="rounded-full px-4 py-3 text-lg bg-yellow-300 text-[#19234B] font-bold hover:bg-[#19234B] hover:text-white transition text-center block">
+          Initiate a Project
+        </a>
+      </div>
+    </div>
+  </section>
 
-     <section class="second-section">
-        <div>
-            <h1>ABOUT</h1>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-4 bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center"
+    style="background-image: url('./Images/Presentation2.jpg'); opacity: 20;">
+    <div class="flex flex-col md:flex-row items-center gap-20 w-full max-w-5xl mx-auto">
+      <!-- Image -->
+      <div class="flex justify-center items-center w-full md:w-1/2">
+        <img class="w-full h-64 md:w-full md:h-auto object-cover rounded-full shadow-lg" src="./Images/Hero.jpeg"
+          alt="My Image">
+      </div>
+      <!-- Text -->
+      <div class="w-full md:w-1/2">
+        <h1 class="text-2xl md:text-4xl font-extrabold text-black text-center mb-6">ABOUT</h1>
+        <p class="font-family text-base md:text-lg text-black font-medium text-center ">
+          I am a passionate, creative web developer and content writer with a keen eye for detail and a love for
+          building beautiful, user-friendly digital experiences. With a background in both technology and
+          communication,
+          I bridge the gap between design and functionality, ensuring every project is both visually appealing and
+          effective.<br><br>
+          My journey in web development and content creation has equipped me with a diverse set of skills, from
+          crafting
+          responsive websites to writing engaging, SEO-optimized content. I thrive on challenges and am always eager
+          to
+          learn new technologies and techniques.<br><br>
+          Whether you need a modern website, compelling content, or expert advice on your next project, I am here to
+          help you achieve your goals and bring your ideas to life.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-12 px-4" style="background-image: url('./Images/Presentation2.jpg'); opacity: 40;">
+    <h1 class="font-family md:text-4xl font-bold text-black mb-8 text-center">SEE MY PROJECTS</h1>
+    <div class="overflow-x-hidden">
+      <div class="flex gap-8 animate-scroll-projects">
+        <!-- Repeat your project cards here -->
+        <div
+          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+          <a href="https://new-landing-page-jt2g.vercel.app/" target="_blank" rel="noopener">
+            <img src="./Images/enabler.jpg" alt="Project 1" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+          </a>
+          <p class="text-white mt-4 text-2xl text-center font-semibold">Consultancy</p>
         </div>
-        <div class="Image">
-            <img src="./Images/Group-of-smiling-doctors.jpg" alt="Smiling Doctors">
+        <div
+          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+          <a href="https://team-apha.vercel.app/" target="_blank" rel="noopener">
+            <img src="./Images/Alpha.jpg" alt="Project 2" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+          </a>
+          <p class="text-white mt-4 text-2xl text-center font-semibold">Team Project</p>
         </div>
-     </section>
+        <div
+          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+          <a href="https://urban-octo-sniffle.vercel.app/" target="_blank" rel="noopener">
+            <img src="./Images/icon1.jpg" alt="Project 3" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+          </a>
+          <p class="text-white mt-4 text-2xl text-center font-semibold">New Oden Restaurant</p>
+        </div>
+        <div
+          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+          <a href="https://aidehadie.wordpress.com/" target="_blank" rel="noopener">
+            <img src="./Images/aide.jpg" alt="Project 4" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+          </a>
+          <p class="text-white mt-4 text-2xl text-center font-semibold">Manorkie's Blog</p>
+        </div>
+        <!-- Duplicate cards for seamless loop if you want -->
+        <div
+          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+          <a href="https://new-landing-page-jt2g.vercel.app/" target="_blank" rel="noopener">
+            <img src="./Images/enabler.jpg" alt="Project 1" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+          </a>
+          <p class="text-white mt-4 text-2xl text-center font-semibold">Consultancy</p>
+        </div>
+        <div
+          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+          <a href="https://team-apha.vercel.app/" target="_blank" rel="noopener">
+            <img src="./Images/Alpha.jpg" alt="Project 2" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+          </a>
+          <p class="text-white mt-4 text-2xl text-center font-semibold">Team Project</p>
+        </div>
+        <div
+          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+          <a href="https://urban-octo-sniffle.vercel.app/" target="_blank" rel="noopener">
+            <img src="./Images/icon1.jpg" alt="Project 3" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+          </a>
+          <p class="text-white mt-4 text-2xl text-center font-semibold">New Oden Restaurant</p>
+        </div>
+        <div
+          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+          <a href="https://aidehadie.wordpress.com/" target="_blank" rel="noopener">
+            <img src="./Images/aide.jpg" alt="Project 4" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+          </a>
+          <p class="text-white mt-4 text-2xl text-center font-semibold">Manorkie's Blog</p>
+        </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 px-4 bg-gradient-to-br from-[#19234B]/80 via-[#facc15]/10 to-[#386D88]/80">
+    <div class="max-w-4xl mx-auto bg-white bg-opacity-20 backdrop-blur-md rounded-2xl shadow-2xl p-10">
+      <h1 class="text-3xl md:text-4xl font-bold text-[#19234B] mb-10 text-center font-heading tracking-wide">SKILLS
+      </h1>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        <!-- Skill Card Example -->
+        <div
+          class="flex flex-col items-center bg-white bg-opacity-30 rounded-xl shadow-lg p-6 hover:scale-105 hover:bg-yellow-100/40 transition-all duration-300">
+          <svg class="w-10 h-10 text-[#19234B] mb-3" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path d="M3 3h18v18H3V3z" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="text-lg font-bold text-[#19234B]">HTML</span>
+        </div>
+        <div
+          class="flex flex-col items-center bg-white bg-opacity-30 rounded-xl shadow-lg p-6 hover:scale-105 hover:bg-yellow-100/40 transition-all duration-300">
+          <svg class="w-10 h-10 text-[#19234B] mb-3" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path d="M4 4h16v16H4V4z" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="text-lg font-bold text-[#19234B]">CSS</span>
+        </div>
+        <div
+          class="flex flex-col items-center bg-white bg-opacity-30 rounded-xl shadow-lg p-6 hover:scale-105 hover:bg-yellow-100/40 transition-all duration-300">
+          <svg class="w-10 h-10 text-[#19234B] mb-3" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path d="M3 3h18v18H3V3z" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="text-lg font-bold text-[#19234B]">Tailwind CSS</span>
+        </div>
+        <div
+          class="flex flex-col items-center bg-white bg-opacity-30 rounded-xl shadow-lg p-6 hover:scale-105 hover:bg-yellow-100/40 transition-all duration-300">
+          <svg class="w-10 h-10 text-[#19234B] mb-3" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path d="M3 3h18v18H3V3z" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="text-lg font-bold text-[#19234B]">JavaScript</span>
+        </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 bg-gradient-to-br from-[#386D88]/80 via-[#facc15]/10 to-[#19234B]/80">
+    <div class="max-w-3xl mx-auto bg-white bg-opacity-20 backdrop-blur-md rounded-2xl shadow-2xl p-6 md:p-10">
+      <h1 class="text-3xl md:text-4xl font-bold text-[#19234B] mb-8 text-center font-heading tracking-wide">Contact
+      </h1>
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <!-- Form -->
+        <form class="flex-1 flex flex-col gap-4">
+          <input type="text" placeholder="Your Name"
+            class="px-4 py-3 rounded-lg bg-white bg-opacity-90 text-black focus:outline-none focus:ring-2 focus:ring-[#19234B] transition"
+            required>
+          <input type="email" placeholder="Your Email"
+            class="px-4 py-3 rounded-lg bg-white bg-opacity-90 text-black focus:outline-none focus:ring-2 focus:ring-[#19234B] transition"
+            required>
+          <textarea placeholder="Your Message" rows="4"
+            class="px-4 py-3 rounded-lg bg-white bg-opacity-90 text-black focus:outline-none focus:ring-2 focus:ring-[#19234B] transition resize-none"
+            required></textarea>
+          <button type="submit"
+            class="bg-[#19234B] text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-yellow-300 hover:text-[#19234B] transition text-lg w-40 mx-auto md:mx-0">Send
+            Message</button>
+        </form>
+        <!-- Address & Socials -->
+        <div class="flex-1 flex flex-col items-center md:items-start">
+          <h2 class="text-lg font-semibold text-[#19234B] mb-2 text-center">My Address</h2>
+          <p
+            class="text-base text-[#19234B] bg-white bg-opacity-60 rounded-lg px-4 py-2 shadow mb-6 text-center md:text-left">
+            N0 45 Erzuah Ln, Akweteyman<br>
+            P.O. Box 1234<br>
+            Accra, Ghana<br>
+
+          </p>
+          <h2 class="text-lg font-semibold text-[#19234B] mb-4 tracking-wide">Follow me on socials</h2>
+          <div class="flex gap-6 justify-center md:justify-start">
+            <a href="https://github.com/Manorkie25" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github fa-2x text-[#19234B] hover:text-yellow-300 transition"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/esther-manor-6b8466132/" target="_blank" rel="noopener"
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin fa-2x text-[#19234B] hover:text-yellow-300 transition"></i>
+            </a>
+            <a href="https://x.com/EstherManor" target="_blank" rel="noopener" aria-label="Twitter">
+              <i class="fab fa-twitter fa-2x text-[#19234B] hover:text-yellow-300 transition"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 </body>
+<footer class="bg-[#386D87] text-white bg-opacity-80 py-4 text-center">
+  <p class="text-sm">© 2025 Esther Manor. All rights reserved.</p>
+  <p class="text-sm">Made using HTML, CSS, tailwindcss and JavaScript</p>
 
 </html>
