@@ -58,11 +58,11 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   font-family: 'Montserrat', sans-serif;
 }
 
-@keyframes scroll-projects {
+/* @keyframes scroll-projects {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 .animate-scroll-projects {
   animation: scroll-projects 20s linear infinite;
   width: max-content;
-}
+} */

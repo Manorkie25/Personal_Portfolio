@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <!-- Navbar -->
+  <!-- My  Navbar -->
   <nav
     class="navbar fixed flex flex-row justify-between left-0 w-full z-50 bg-[#386D88] text-white px-4 md:px-8 py-2 text-lg font-sans">
     <div class="flex items-center justify-between w-full">
@@ -25,7 +25,7 @@
         <i class="fas fa-bars fa-2x"></i>
       </button>
     </div>
-    <!-- Nav menu OUTSIDE the flex row -->
+    <!-- My  Nav menu  -->
     <div id="nav-menu"
       class="font-family nav-items flex-col md:flex md:flex-row gap-6 md:gap-8 mt-4 md:mt-0 hidden md:flex bg-[#386D88] rounded-lg shadow-lg md:shadow-none transition-all duration-300 absolute md:static top-16 left-4 right-4 z-40">
       <a href="#home" class="hover:text-yellow-300 font-bold">Home</a>
@@ -35,7 +35,7 @@
       <a href="#contact" class="hover:text-yellow-300 font-bold">Contact</a>
     </div>
   </nav>
-  <!-- Hero Section -->
+  <!-- My  Hero Section -->
   <section id="home"
     class="hero-bg-animate bg-cover bg-no-repeat bg-center bg-fixed min-h-screen flex items-center justify-center relative"
     style="background-image: url('./Images/Actual.jpg');">
@@ -62,17 +62,17 @@
   </section>
 
 
-  <!-- About Section -->
+  <!-- My About Section -->
   <section id="about" class="py-16 px-4 bg-cover bg-center bg-no-repeat flex items-center justify-center"
     style="background-image: url('./Images/Presentation2.jpg'); opacity:20;">
     <div class="flex flex-col md:flex-row items-center gap-10 md:gap-20 w-full max-w-5xl mx-auto">
-      <!-- Image -->
+     
       <div class="flex justify-center items-center w-full md:w-1/2">
         <img
           class="w-full max-w-md h-auto md:w-full md:h-auto object-cover rounded-2xl shadow-2xl border-4 border-yellow-300 mx-auto"
           src="./Images/Hero.jpeg" alt="My Image">
       </div>
-      <!-- Text Card -->
+      <!-- This is how a text card works -->
       <div class="w-full md:w-1/2">
         <div class="bg-white bg-opacity-80 rounded-2xl shadow-xl p-8 border-t-4 border-yellow-300 w-full">
           <h1 class="text-2xl md:text-4xl font-extrabold text-[#19234B] text-center mb-4 tracking-wide">ABOUT</h1>
@@ -112,75 +112,59 @@
   </section>
 
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-12 px-4" style="background-image: url('./Images/Presentation2.jpg'); opacity: 40;">
-    <h1 class="font-family md:text-4xl font-bold text-black mb-8 text-center">SEE MY PROJECTS</h1>
-    <div class="overflow-x-hidden">
-      <div class="flex gap-8 animate-scroll-projects">
-        <!-- Repeat your project cards here -->
-        <div
-          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
-          <a href="https://new-landing-page-jt2g.vercel.app/" target="_blank" rel="noopener">
-            <img src="./Images/enabler.jpg" alt="Project 1" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
-          </a>
-          <p class="text-white mt-4 text-2xl text-center font-semibold">Consultancy</p>
-        </div>
-        <div
-          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
-          <a href="https://team-apha.vercel.app/" target="_blank" rel="noopener">
-            <img src="./Images/Alpha.jpg" alt="Project 2" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
-          </a>
-          <p class="text-white mt-4 text-2xl text-center font-semibold">Team Project</p>
-        </div>
-        <div
-          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
-          <a href="https://urban-octo-sniffle.vercel.app/" target="_blank" rel="noopener">
-            <img src="./Images/icon1.jpg" alt="Project 3" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
-          </a>
-          <p class="text-white mt-4 text-2xl text-center font-semibold">New Oden Restaurant</p>
-        </div>
-        <div
-          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
-          <a href="https://aidehadie.wordpress.com/" target="_blank" rel="noopener">
-            <img src="./Images/aide.jpg" alt="Project 4" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
-          </a>
-          <p class="text-white mt-4 text-2xl text-center font-semibold">Manorkie's Blog</p>
-        </div>
-        <!-- Duplicate cards for seamless loop if you want -->
-        <div
-          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
-          <a href="https://eventhived.netlify.app/" target="_blank" rel="noopener">
-            <img src="./Images/event-hive.png" alt="Project 1"
-              class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
-          </a>
-          <p class="text-white mt-4 text-2xl text-center font-semibold">Events Marketing</p>
-        </div>
-        <div
-          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
-          <a href="https://deeconnect.netlify.app/" target="_blank" rel="noopener">
-            <img src="./Images/deeconnect.png" alt="Project 2"
-              class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
-          </a>
-          <p class="text-white mt-4 text-2xl text-center font-semibold">Team Project</p>
-        </div>
-        <div
-          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
-          <a href="https://libapp2.netlify.app//" target="_blank" rel="noopener">
-            <img src="./Images/libapp.png" alt="Project 3" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
-          </a>
-          <p class="text-white mt-4 text-2xl text-center font-semibold">Online Library</p>
-        </div>
-        <div
-          class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
-          <a href="https://aidehadie.wordpress.com/" target="_blank" rel="noopener">
-            <img src="./Images/aide.jpg" alt="Project 4" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
-          </a>
-          <p class="text-white mt-4 text-2xl text-center font-semibold">Manorkie's Blog</p>
-        </div>
-  </section>
+  <!-- My Portfolio Section -->
+ <section id="portfolio" class="py-12 px-4" style="background-image: url('./Images/Presentation2.jpg'); opacity: 40;">
+  <h1 class="font-family md:text-4xl font-bold text-blue-800 mb-8 text-center">View My Projects Below</h1>
+  <div class="overflow-x-auto">
+    <div class="flex gap-8 min-w-max pb-4">
+      <div class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+        <a href="https://new-landing-page-jt2g.vercel.app/" target="_blank" rel="noopener">
+          <img src="./Images/enabler.jpg" alt="Project 1" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+        </a>
+        <p class="text-white mt-4 text-2xl text-center font-semibold">Consultancy Template</p>
+      </div>
+      <div class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+        <a href="https://team-apha.vercel.app/" target="_blank" rel="noopener">
+          <img src="./Images/Alpha.jpg" alt="Project 2" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+        </a>
+        <p class="text-white mt-4 text-2xl text-center font-semibold">Plain Template</p>
+      </div>
+      <div class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+        <a href="https://urban-octo-sniffle.vercel.app/" target="_blank" rel="noopener">
+          <img src="./Images/icon1.jpg" alt="Project 3" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+        </a>
+        <p class="text-white mt-4 text-2xl text-center font-semibold">Restaurant Template</p>
+      </div>
+      <div class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+        <a href="https://aidehadie.wordpress.com/" target="_blank" rel="noopener">
+          <img src="./Images/aide.jpg" alt="Project 4" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+        </a>
+        <p class="text-white mt-4 text-2xl text-center font-semibold">My Personal  Blog</p>
+      </div>
+      <div class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+        <a href="https://eventhived.netlify.app/" target="_blank" rel="noopener">
+          <img src="./Images/event-hive.png" alt="Project 5" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+        </a>
+        <p class="text-white mt-4 text-2xl text-center font-semibold">Events Marketing Website</p>
+      </div>
+      <div class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+        <a href="https://deeconnect.netlify.app/" target="_blank" rel="noopener">
+          <img src="./Images/deeconnect.png" alt="Project 6" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+        </a>
+        <p class="text-white mt-4 text-2xl text-center font-semibold">Advertisement Website</p>
+      </div>
+      <div class="bg-white bg-opacity-10 rounded-2xl shadow-2xl hover:shadow-yellow-400/40 transition-shadow duration-300 p-8 flex flex-col items-center min-w-[300px] max-w-xs">
+        <a href="https://libapp2.netlify.app/" target="_blank" rel="noopener">
+          <img src="./Images/libapp.png" alt="Project 7" class="aspect-[4/3] w-full object-cover rounded-xl mb-4" />
+        </a>
+        <p class="text-white mt-4 text-2xl text-center font-semibold">Online Library</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-  <!-- Skills Section -->
+  <!-- My Skills Section -->
   <section id="skills" class="py-16 px-4 bg-gradient-to-br from-[#19234B]/80 via-[#facc15]/10 to-[#386D88]/80">
     <div class="max-w-4xl mx-auto bg-white bg-opacity-20 backdrop-blur-md rounded-2xl shadow-2xl p-10">
       <h1 class="text-3xl md:text-4xl font-bold text-[#19234B] mb-10 text-center font-heading tracking-wide">SKILLS
@@ -254,13 +238,13 @@
       </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- My Contact Section -->
   <section id="contact" class="py-16 px-4 bg-gradient-to-br from-[#386D88]/80 via-[#facc15]/10 to-[#19234B]/80">
     <div class="max-w-3xl mx-auto bg-white bg-opacity-20 backdrop-blur-md rounded-2xl shadow-2xl p-6 md:p-10">
       <h1 class="text-3xl md:text-4xl font-bold text-[#19234B] mb-8 text-center font-heading tracking-wide">Contact
       </h1>
       <div class="flex flex-col md:flex-row gap-8 items-start">
-        <!-- Form -->
+        <!-- The Contact Form -->
         <form class="flex-1 flex flex-col gap-4">
           <input type="text" placeholder="Your Name"
             class="px-4 py-3 rounded-lg bg-white bg-opacity-90 text-black focus:outline-none focus:ring-2 focus:ring-[#19234B] transition"
@@ -275,7 +259,7 @@
             class="bg-[#19234B] text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-yellow-300 hover:text-[#19234B] transition text-lg w-40 mx-auto md:mx-0">Send
             Message</button>
         </form>
-        <!-- Address & Socials -->
+        <!-- My Address & Socials Section -->
         <div class="flex-1 flex flex-col items-center md:items-start">
           <h2 class="text-lg font-semibold text-[#19234B] mb-2 text-center">My Address</h2>
           <p
